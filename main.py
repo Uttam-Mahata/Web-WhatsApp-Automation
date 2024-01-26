@@ -11,7 +11,7 @@ baseurl = "https://web.whatsapp.com/"
 driver.get(baseurl)
 wait = WebDriverWait(driver, 10000)
 target = '"Soumyadip"' # Your friend name e.g. Suraj as saved in WhatsApp
-string = "Hello Soumadip ! This is an automated message.Supriyo keo send krbo erkm ?"
+string = "Hello Soumadip ! This is an automated message."
 x_arg = '//span[contains(@title, '+target + ')]'
 target = wait.until(ec.presence_of_element_located((By.XPATH, x_arg)))
 target.click()
