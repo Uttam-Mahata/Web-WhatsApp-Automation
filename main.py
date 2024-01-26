@@ -15,7 +15,7 @@ string = "Hello Soumadip ! This is an automated message.Supriyo keo send krbo er
 x_arg = '//span[contains(@title, '+target + ')]'
 target = wait.until(ec.presence_of_element_located((By.XPATH, x_arg)))
 target.click()
-text_box = driver.find_element(By.CLASS_NAME,'_3Uu1_')
+text_box = driver.find_element(By.CLASS_NAME,'_3ttl1_')
 for i in range(30):
     text_box.send_keys(string+Keys.ENTER)
 time.sleep(10000)
